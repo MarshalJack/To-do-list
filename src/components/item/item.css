@@ -1,0 +1,44 @@
+li {
+  background-color: white;
+  margin-top: 1%;
+  padding: 0 2%;
+  align-items: center;
+  border-radius: 3px;
+  height: 5vh;
+  font-weight: bold;
+}
+.btn-sm {
+  border: none;
+  background-color: transparent;
+}
+.item .star {
+  color: gray;
+}
+.item .trash {
+  color: rgb(24, 185, 45);
+}
+.item .heart {
+  color: rgba(128, 128, 128, 0.308);
+}
+.bookmark {
+  background-color: #3f51b5;
+  color: white;
+}
+.bookmark .star {
+  color: rgb(255, 208, 0);
+  animation: star 0.6s linear;
+}
+.like .heart {
+  color: red;
+  animation: heart_beat 0.7s linear;
+}
+@keyframes heart_beat {
+  50% {
+    transform: scale(1.6);
+  }
+}
+@keyframes star {
+  50% {
+    transform: translateY(-1vh);
+  }
+}
